@@ -1,0 +1,57 @@
+const prompt = require('prompt-sync')();
+
+let i = 0
+let qtdCalmas=0
+let qtdNervosas=0
+let qtsAgressivos=0
+let qtdCalmos=0
+let qtdNernosos40=0
+let qtdClamos18 =0
+
+while (i < 150){
+    const idadeText = prompt('\nDigite a idade: \n');
+    const idade = Number(idadeText);
+    console.log('\nEscolha o sexo entre:\n');
+    console.log('\n1-Homem\n');
+    console.log('\n2-Mulher\n');
+    console.log('\n3-Outros\n');
+    const sexotext = prompt ('\nEscolha a opção: \n');
+    console.log('\nEscolha o humor entre: \n');
+    console.log('\n1-Calmas\n');
+    console.log('\n2-Nervosas\n');
+    console.log('\n3-Agressivas\n');
+    const humortext = prompt ('\nEscolha a opção: \n');
+    const humor = Number(humortext);
+
+    if(humor == 1){
+        pessoasCalmas ++
+    }
+    if(humor  ==  2 && sexo == 1){
+        mulheresNervosas ++
+    }
+    if(humor == 3 && sexo  == 2){
+        homensAgressivos ++
+    }
+    if(humor == 1 && sexo == 3 ){
+        outrosCalmos ++
+    }
+    if(humor == 2 && idade > 40){
+        pessoaNervosa40 ++
+    }
+    if( humor == 1 && idade < 18){
+        pessoaCalma18 ++
+    }
+
+    i++;
+   }
+
+consola . log ( `O número de pessoas calmas é: ${pessoasCalmas}\n `)
+consola . log ( `O número de mulheres nervosas é: ${mulheresNervosas}\n `)
+consola . log ( `O número de homens agressivos é: ${homensAgressivos}\n `)
+consola . log ( `O número de outros calmos é: ${outrosCalmos}\n `)
+consola . log ( `O número de pessoas nervosas com mais de 40 anos é: ${pessoaNervosa40}\n `)
+consola . log ( `O número de pessoas calmas com menos de 18 anos é: ${pessoaCalma18}\n `)
+
+
+    
+

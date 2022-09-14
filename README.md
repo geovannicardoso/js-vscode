@@ -1,1 +1,1 @@
-#Loops-js-vscode
+# js-vscode

@@ -1,0 +1,16 @@
+const prompt = require ('prompt-sync')();
+let idade
+let id=0;
+let id1=0;
+let num = Number(idade)
+
+while ( num != 99){
+   num = prompt(`Digite a idade; `);
+    if( num <= 21){
+        id++
+    }if(num >= 50){
+        id1++
+    }
+
+} console.log(`\n Número de pessoa com 21 ou menos é: ${id}`);
+  console.log(`\n Número de pessoa com 50 ou mais é: ${id1}`);

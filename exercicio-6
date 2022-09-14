@@ -1,0 +1,20 @@
+const prompt=require ('prompt-sync')();
+
+let num
+let num1 =0;
+let num2 =0;
+let total=0;
+do{
+   num = Number (prompt('Digite o número: '));
+    
+    if(num % 3 == 0){
+        num1++
+        num2= num2 + num;
+    }
+} 
+    while(num != 0 ){
+   } 
+   total = num2 / num1;
+
+console.log(`\n soma dos números multiplos de 3 é: ${num2}`);
+console.log(`\n Media de números multiplos de 3 é: ${total}`);
